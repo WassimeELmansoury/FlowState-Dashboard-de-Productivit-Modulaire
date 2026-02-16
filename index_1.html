@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FlowState</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="mx-4 bg-white">
+
+  <!-- Header -->
+  <header class="p-6 flex items-center gap-4">
+    <button class="hover:bg-gray-100 p-2 rounded-lg">
+      <i class="fa-solid fa-bars text-2xl"></i>
+    </button>
+    <h1 class="font-bold text-2xl text-gray-800">Pomodoro</h1>
+  </header>
+
+  <!-- Main -->
+  <main class="px-6 flex flex-col items-center space-y-8">
+
+    <!-- Task -->
+    <button class="bg-[#FF7A00] text-white px-6 py-2 rounded-full shadow">
+      Select Task
+    </button>
+
+    <!-- Timer Card -->
+    <div class="bg-[#FDDDCA] w-full max-w-xs p-8 rounded-3xl text-center space-y-3">
+      <span class="text-5xl font-bold text-black">25:00</span>
+      <p class="text-gray-700 text-sm">Session 1 of 4</p>
+    </div>
+
+    <p class="font-semibold text-gray-800">
+      Stay Focused for 25 minutes
+    </p>
+
+    <!-- Controls -->
+    <div class="flex items-center gap-10">
+      <button class="text-gray-700">
+        <i class="fa-solid fa-rotate-left text-2xl"></i>
+      </button>
+
+      <button class="text-[#FF7A00]">
+        <i class="fa-solid fa-play text-4xl"></i>
+      </button>
+
+      <button class="bg-black w-8 h-8 rounded-sm"></button>
+    </div>
+
+  </main>
+
+  <footer class="fixed bottom-0 left-0 w-full bg-[#E5E5E5] py-4 px-6 flex justify-around items-center border-t">
+    <i class="fa-solid fa-house text-2xl text-[#50361E]"></i>
+    <i class="fa-solid fa-clipboard-list text-2xl text-[#50361E]"></i>
+    <div class="bg-[#FF7A00] p-3 rounded-full">
+      <i class="fa-solid fa-stopwatch text-white text-2xl"></i>
+    </div>
+    <i class="fa-solid fa-tree text-2xl text-[#50361E]"></i>
+    <i class="fa-solid fa-user text-2xl text-[#50361E]"></i>
+  </footer>
+
+</body>
+</html>
