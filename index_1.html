@@ -17,14 +17,13 @@
     <h1 class="font-bold text-2xl text-gray-800">Pomodoro</h1>
   </header>
 
-<main class="px-6 py-10 flex justify-center">
-    <div class="w-full max-w-md space-y-6 text-center">
+<main class="px-6 py-10 space-y-6 lg:grid lg:grid-cols-2 lg:gap-6">
 
     <button class="bg-[#FF7A00] text-white px-6 py-2 rounded-full shadow">
       Select Task
     </button>
-    
-    <div class="bg-[#FDDDCA] p-8 rounded-3xl space-y-3">
+
+    <div class="bg-[#FDDDCA] w-full max-w-xs p-8 rounded-3xl text-center space-y-3">
       <span class="text-5xl font-bold text-black">25:00</span>
       <p class="text-gray-700 text-sm">Session 1 of 4</p>
     </div>
@@ -33,7 +32,7 @@
       Stay Focused for 25 minutes
     </p>
 
-    <div class="flex items-center justify-center gap-10">
+    <div class="flex items-center gap-10">
       <button class="text-gray-700">
         <i class="fa-solid fa-rotate-left text-2xl"></i>
       </button>
@@ -44,7 +43,18 @@
 
       <button class="bg-black w-8 h-8 rounded-sm"></button>
     </div>
-</div>
-</main>
+
+  </main>
+
+  <footer class="fixed bottom-0 left-0 w-full bg-[#E5E5E5] py-4 px-6 flex justify-around items-center border-t">
+    <i class="fa-solid fa-house text-2xl text-[#50361E]"></i>
+    <i class="fa-solid fa-clipboard-list text-2xl text-[#50361E]"></i>
+    <div class="bg-[#FF7A00] p-3 rounded-full">
+      <i class="fa-solid fa-stopwatch text-white text-2xl"></i>
+    </div>
+    <i class="fa-solid fa-tree text-2xl text-[#50361E]"></i>
+    <i class="fa-solid fa-user text-2xl text-[#50361E]"></i>
+  </footer>
+
 </body>
 </html>
