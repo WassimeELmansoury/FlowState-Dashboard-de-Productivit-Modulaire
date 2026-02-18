@@ -3,45 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FlowState</title>
+  <title>page Pomodoro</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body class="bg-gray-100 flex justify-center">
 
-  <!-- Container -->
   <div class="w-full max-w-md lg:max-w-4xl bg-white min-h-screen shadow-lg flex flex-col">
 
-    <!-- Header -->
     <header class="p-6 flex items-center gap-4">
+    <a href="">
       <button class="hover:bg-gray-100 p-2 rounded-lg">
         <i class="fa-solid fa-bars text-2xl"></i>
       </button>
+    </a>
+
       <h1 class="font-bold text-2xl text-gray-800">Pomodoro</h1>
     </header>
 
-    <!-- Main -->
     <main class="flex-1 px-6 py-10 flex justify-center">
       <div class="w-full max-w-sm text-center space-y-6">
 
-        <!-- Select task -->
-        <button class="bg-[#FF7A00] text-white px-6 py-2 rounded-full shadow">
-          Select Task
-        </button>
-
-        <!-- Timer -->
         <div class="bg-[#FDDDCA] p-8 rounded-3xl space-y-3">
-          <span class="text-5xl font-bold text-black">25:00</span>
+          <h2 id="taskTitle" class="text-xl font-bold text-gray-800"></h2>
+          <span id="taskTime" class="text-5xl font-bold text-black">25:00</span>
           <p class="text-gray-700 text-sm">Session 1 of 4</p>
         </div>
 
-        <!-- Text -->
+
+
         <p class="font-semibold text-gray-800">
           Stay Focused for 25 minutes
         </p>
 
-        <!-- Controls -->
         <div class="flex items-center justify-center gap-10">
           <button class="text-gray-700">
             <i class="fa-solid fa-rotate-left text-2xl"></i>
@@ -57,17 +52,18 @@
       </div>
     </main>
 
-    <!-- Footer -->
     <footer class="fixed bottom-0 left-0 w-full
       lg:max-w-4xl lg:left-1/2 lg:-translate-x-1/2
       bg-[#E5E5E5] py-4 px-6 flex justify-around items-center border-t">
-
+      
+      
       <i class="fa-solid fa-house text-2xl text-[#50361E]"></i>
       <i class="fa-solid fa-clipboard-list text-2xl text-[#50361E]"></i>
+      <button onclick="goHome()" class="hover:bg-gray-100 p-2 rounded-lg">
+        <i class="fa-solid fa-arrow-left text-2xl"></i>
+      </button>
 
-      <div class="bg-[#FF7A00] p-3 rounded-full">
-        <i class="fa-solid fa-stopwatch text-white text-2xl"></i>
-      </div>
+
 
       <i class="fa-solid fa-tree text-2xl text-[#50361E]"></i>
       <i class="fa-solid fa-user text-2xl text-[#50361E]"></i>
@@ -76,4 +72,5 @@
   </div>
 
 </body>
+<script src="Script.js"></script>
 </html>
