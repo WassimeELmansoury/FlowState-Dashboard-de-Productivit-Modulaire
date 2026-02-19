@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
       div.innerHTML = `
         <div class="flex items-center gap-6">
           <div class="bg-white p-3 rounded-2xl">
-            <i class="fa-solid fa-laptop-code"></i>
+            <i class="fa-solid fa-spa text-orange-400 text-2xl"></i>
           </div>
           <div>
             <h4 class="font-bold text-sm">${task.title}</h4>
